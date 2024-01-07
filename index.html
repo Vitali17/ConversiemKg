@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Conversie marimi</title>
+</head>
+<body>
+    <header class="header">
+        <h2>Conversie</h2>
+    </header>
+    <br>
+    <div class="conv" id="conv">
+        <label style="font-size: medium;">Introduce valoarea:</label>
+        <br>
+        <input type="number" id="valoarea1" class="numar">
+        <select name="box1" id="Box1" class="selec">
+            <option value="g" selected>g</option>
+            <option value="kg" selected>kg</option>
+            <option value="t" selected>t</option>
+        </select>
+        <button onclick="afisarekg()" class="buton">Converteste</button>
+        <br>
+        <i class="fa-solid fa-arrows-up-down" style="padding-left: 18%; font-size: 30px;"></i>
+        <br>
+        <span style="font-size: 15px">Valoare convertita:</span>
+        <br>
+        <input type="number" id="valoarea2" class="numar">
+        <select name="box2"id="Box2" class="selec">
+            <option value="g" selected>g</option>
+            <option value="kg" selected>kg</option>
+            <option value="t" selected>t</option>
+           </select> 
+           <i class="fa-solid fa-check" id="check" style="font-size: 30px; padding-left:30px; display: none;"></i>
+    </div>
+    <div class="metru" id="metru" >
+        <label style="font-size: medium;">Introduce valoarea:</label>
+        <br>
+        <input type="number" id="valoarea3" class="numar">
+        <select name="box1" id="Box3" class="selec">
+            <option value="m" selected>m</option>
+            <option value="dm" selected>dm</option>
+            <option value="cm" selected>cm</option>
+        </select>
+        <button onclick="afisarem()" class="buton">Converteste</button>
+        <br>
+        <i class="fa-solid fa-arrows-up-down" style="padding-left: 18%; font-size: 30px;"></i>
+        <br>
+        <span style="font-size: 15px">Valoare convertita:</span>
+        <br>
+        <input type="number" id="valoarea4" class="numar">
+        <select name="box2"id="Box4" class="selec">
+            <option value="m" selected>m</option>
+            <option value="dm" selected>dm</option>
+            <option value="cm" selected>cm</option>
+           </select> 
+           <i class="fa-solid fa-check" id="check1" style="font-size: 30px; padding-left:30px; display: none;"></i>
+    </div>
+    <div class="nav-bar">
+        <table>
+            <tr>
+                <td><button onclick="metru()" class="aranjare">Lungime</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="kilogram()" class="aranjare">Masa</button>  </td>
+            </tr>
+        </table>
+        
+    </div>
+    <script src="kilogram.js"></script>
+    <script src="metru.js"></script>
+    <script src="aranjare.js"></script>
+</body>
+</html>
